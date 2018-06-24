@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ffc9ffbe-ce72-44a1-b60b-9c7f0849b607" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/.idea/artifacts/SpringMvcRampingUp_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/.idea/libraries/Spring_4_3_18_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/.idea/libraries/Spring_Batch_2_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/.idea/libraries/Spring_Data_JPA_1_3_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/.idea/libraries/Spring_Integration_4_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/.idea/libraries/Spring_MVC_4_3_18_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/.idea/libraries/Spring_Security_3_2_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/.idea/libraries/Spring_Web_Services_2_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/.idea/libraries/Spring_Webflow_2_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/SpringMvcRampingUp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/aopalliance-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-aop-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-aspects-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-batch-core-2.2.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-batch-infrastructure-2.2.6.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-beans-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-binding-2.4.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-context-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-context-support-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-core-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-data-jpa-1.3.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-expression-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-faces-2.4.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-instrument-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-instrument-tomcat-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-integration-amqp-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-integration-core-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-integration-event-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-integration-feed-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-integration-file-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-integration-ftp-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-integration-gemfire-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-integration-groovy-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-integration-http-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-integration-ip-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-integration-jdbc-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-integration-jms-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-integration-jmx-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-integration-jpa-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-integration-mail-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-integration-mongodb-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-integration-mqtt-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-integration-redis-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-integration-rmi-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-integration-scripting-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-integration-security-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-integration-sftp-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-integration-stream-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-integration-syslog-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-integration-test-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-integration-twitter-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-integration-ws-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-integration-xml-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-integration-xmpp-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-jdbc-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-jms-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-js-2.4.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-js-resources-2.4.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-messaging-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-orm-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-oxm-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-security-acl-3.2.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-security-aspects-3.2.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-security-cas-3.2.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-security-config-3.2.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-security-core-3.2.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-security-crypto-3.2.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-security-ldap-3.2.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-security-openid-3.2.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-security-remoting-3.2.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-security-taglibs-3.2.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-security-web-3.2.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-test-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-tx-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-web-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-webflow-2.4.0.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-webmvc-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-webmvc-portlet-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-websocket-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/lib/spring-ws.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/web/WEB-INF/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/web/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/web/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringMvcRampingUp/web/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/.idea/libraries/Hibernate_5_2_16_5_2_16.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/.idea/libraries/Spring_4_3_18_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/.idea/libraries/Spring_Data_JPA_1_3_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/.idea/libraries/Spring_Integration_4_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/.idea/libraries/Spring_Security_3_2_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/.idea/libraries/Spring_Web_Services_2_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/SpringRampingUp.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/hamcrest-all-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/hamcrest-library-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/junit-4.7.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/antlr-2.7.7.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/aopalliance-1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/classmate-1.3.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/commons-logging-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/dom4j-1.6.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/hibernate-commons-annotations-5.0.1.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/hibernate-core-5.2.16.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/jandex-2.0.3.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/javassist-3.22.0-GA.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/jboss-logging-3.3.1.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/jboss-transaction-api_1.2_spec-1.0.1.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-aop-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-aspects-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-beans-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-context-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-context-support-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-core-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-data-jpa-1.3.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-expression-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-instrument-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-instrument-tomcat-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-integration-amqp-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-integration-core-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-integration-event-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-integration-feed-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-integration-file-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-integration-ftp-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-integration-gemfire-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-integration-groovy-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-integration-http-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-integration-ip-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-integration-jdbc-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-integration-jms-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-integration-jmx-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-integration-jpa-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-integration-mail-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-integration-mongodb-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-integration-mqtt-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-integration-redis-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-integration-rmi-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-integration-scripting-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-integration-security-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-integration-sftp-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-integration-stream-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-integration-syslog-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-integration-test-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-integration-twitter-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-integration-ws-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-integration-xml-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-integration-xmpp-4.0.3.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-jdbc-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-jms-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-messaging-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-orm-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-oxm-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-security-acl-3.2.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-security-aspects-3.2.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-security-cas-3.2.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-security-config-3.2.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-security-core-3.2.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-security-crypto-3.2.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-security-ldap-3.2.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-security-openid-3.2.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-security-remoting-3.2.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-security-taglibs-3.2.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-security-web-3.2.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-test-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-tx-4.3.18.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/lib/spring-ws.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SpringRampingUp/org.apache.servicemix.bundles.hamcrest-1.1_1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restAss.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/test/restass/Test001.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/com/test/restass/Test001.class" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="237">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Test001.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/test/restass/Test001.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="44" lean-forward="true" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/test/java/com/test/restass/Test001.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="160" />
+    <option name="y" value="-940" />
+    <option name="width" value="1280" />
+    <option name="height" value="720" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AndroidView" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="restAss" type="b2602c69:ProjectViewProjectNode" />
+              <item name="restAss" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="restAss" type="b2602c69:ProjectViewProjectNode" />
+              <item name="restAss" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="restAss" type="b2602c69:ProjectViewProjectNode" />
+              <item name="restAss" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="restAss" type="b2602c69:ProjectViewProjectNode" />
+              <item name="restAss" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="restAss" type="b2602c69:ProjectViewProjectNode" />
+              <item name="restAss" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="restass" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="restAss" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.Test001">
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="All in restAss" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="restAss" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="Test001" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="auth" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.restass.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.test.restass" />
+      <option name="MAIN_CLASS_NAME" value="com.test.restass.Test001" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="Test001.testConnect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="restAss" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.restass.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.test.restass" />
+      <option name="MAIN_CLASS_NAME" value="com.test.restass.Test001" />
+      <option name="METHOD_NAME" value="testConnect" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.All in restAss" />
+      <item itemvalue="JUnit.Test001" />
+      <item itemvalue="JUnit.Test001.testConnect" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.Test001" />
+        <item itemvalue="JUnit.Test001.testConnect" />
+        <item itemvalue="JUnit.All in restAss" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ffc9ffbe-ce72-44a1-b60b-9c7f0849b607" name="Default" comment="" />
+      <created>1529771603068</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1529771603068</updated>
+      <workItem from="1529771606486" duration="5331000" />
+      <workItem from="1529817685213" duration="265000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="All_in_restAss - 2018.06.23 at 19h 40m 47s.xml">
+      <configuration name="All in restAss" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test001 - 2018.06.23 at 19h 44m 33s.xml">
+      <configuration name="Test001" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test001_testConnect - 2018.06.24 at 06h 59m 04s.xml">
+      <configuration name="Test001.testConnect" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test001_testConnect - 2018.06.24 at 08h 00m 27s.xml">
+      <configuration name="Test001.testConnect" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test001_testConnect - 2018.06.24 at 08h 00m 50s.xml">
+      <configuration name="Test001.testConnect" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test001_testConnect - 2018.06.24 at 08h 07m 04s.xml">
+      <configuration name="Test001.testConnect" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="5596000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="8" y="-12" width="1280" height="720" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info active="true" anchor="bottom" id="Messages" order="7" sideWeight="0.49918032" visible="true" weight="0.3270548" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5008197" side_tool="true" visible="true" weight="0.3270548" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33790737" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25737706" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Learn" order="2" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="17" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/test/restass/Test001.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/test/restass/Test001.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="44" lean-forward="true" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
