@@ -27,6 +27,7 @@
     <expand />
     <select />
   </component>
+  <component name="ExportTestResults" exportFormat="Xml" outputFolder="$PROJECT_DIR$" userTempatePath="" />
   <component name="FavoritesManager">
     <favorites_list name="restAss" />
   </component>
@@ -91,7 +92,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="width" value="1920" />
-    <option name="height" value="1050" />
+    <option name="height" value="1044" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -99,7 +100,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -135,12 +135,18 @@
             </path>
             <path>
               <item name="restAss" type="b2602c69:ProjectViewProjectNode" />
+              <item name="restAss" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="restAss" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
@@ -148,7 +154,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../javaExternalSamples/cucumber-jvm-example-master" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -296,6 +302,7 @@
       <workItem from="1529817685213" duration="459000" />
       <workItem from="1529953502270" duration="314000" />
       <workItem from="1530083675334" duration="638000" />
+      <workItem from="1530206964693" duration="1322000" />
     </task>
     <servers />
   </component>
@@ -321,9 +328,12 @@
     <history-entry file="Test001 - 2018.06.24 at 08h 28m 28s.xml">
       <configuration name="Test001" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Test001 - 2018.06.28 at 20h 31m 17s.xml">
+      <configuration name="Test001" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6742000" />
+    <option name="totallyTimeSpent" value="8064000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -335,26 +345,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1050" extended-state="0" />
+    <frame x="0" y="0" width="1280" height="696" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49946237" weight="0.32908705" />
+      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49918032" weight="0.3270548" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50053763" side_tool="true" visible="true" weight="0.3399123" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50163937" side_tool="true" visible="true" weight="0.3375" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49946237" visible="true" weight="0.3399123" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49918032" weight="0.33676976" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49836066" weight="0.3386525" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49836066" visible="true" weight="0.3375" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49833888" visible="true" weight="0.26344085" />
-      <window_info active="true" anchor="right" id="Database" order="3" visible="true" weight="0.3295699" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7924528" visible="true" weight="0.2680328" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.3295082" />
       <window_info id="Learn" order="2" />
-      <window_info id="Structure" order="1" sideWeight="0.5016611" side_tool="true" visible="true" weight="0.26344085" />
+      <window_info id="Structure" order="1" sideWeight="0.20754717" side_tool="true" visible="true" weight="0.2680328" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -362,10 +373,10 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="7" sideWeight="0.49918032" weight="0.3270548" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -375,6 +386,23 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/test/restass/Test001.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
