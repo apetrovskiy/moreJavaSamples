@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ffc9ffbe-ce72-44a1-b60b-9c7f0849b607" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/../restTemplate/src/test/java/com/test/spring/Test001.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../restTemplate/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../restTemplate/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../restTemplate/src/test/java/com/test/spring/Test001.java" beforeDir="false" afterPath="$PROJECT_DIR$/../restTemplate/src/test/java/com/test/spring/Test001.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../testCucumberWithJUnit/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../testCucumberWithJUnit/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -35,16 +35,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="26" column="27" lean-forward="true" selection-end-line="47" selection-end-column="10" />
+            <state relative-caret-position="119">
+              <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Test001.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Test001.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/test/restass/Test001.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
@@ -93,8 +93,7 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="99" />
-    <option name="y" value="1297" />
+    <option name="x" value="10" />
     <option name="width" value="1920" />
     <option name="height" value="1044" />
   </component>
@@ -308,7 +307,7 @@
       <workItem from="1529953502270" duration="314000" />
       <workItem from="1530083675334" duration="638000" />
       <workItem from="1530206964693" duration="1322000" />
-      <workItem from="1530451465775" duration="1495000" />
+      <workItem from="1530451465775" duration="2104000" />
     </task>
     <servers />
   </component>
@@ -339,7 +338,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9559000" />
+    <option name="totallyTimeSpent" value="10168000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -351,7 +350,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="63" y="1225" width="1280" height="696" extended-state="0" />
+    <frame x="7" y="0" width="1280" height="696" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -477,13 +476,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="26" column="27" lean-forward="true" selection-end-line="47" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/test/restass/Test001.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -491,6 +483,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
         </state>
       </provider>
     </entry>
