@@ -1,13 +1,11 @@
-package com.test.restass;
+package com.test.onemore;
 
-import io.restassured.response.*;
+import io.restassured.response.Response;
 import org.junit.jupiter.api.Test;
-import org.junit.platform.commons.annotation.Testable;
 
 import static io.restassured.RestAssured.given;
 
-public class Test001 {
-
+public class Test003 {
     public static final String BASE_URL = "http://localhost:1235/v2";
     public static final String CATS = "/cats";
 
