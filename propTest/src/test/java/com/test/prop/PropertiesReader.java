@@ -18,15 +18,27 @@ public class PropertiesReader {
 
         String pathTestResources = rootPath + "pathTestResources.properties";
         props01.load(new FileInputStream(pathTestResources));
+<<<<<<< HEAD
 
         // String pathTest = Thread.currentThread().getContextClassLoader().getResource("").getPath() + "pathTopResources.properties";
         // props02.load(new FileInputStream(pathTest));
+=======
+/*
+        String pathTest = Thread.currentThread().getContextClassLoader().getResource("").getPath() + "pathTopResources.properties";
+        props02.load(new FileInputStream(pathTest));
+>>>>>>> 5bc2e9da49b4f23dcdf685f7c2ec3a072c4c004d
 
         // String pathTestResources2 = Thread.currentThread().getContextClassLoader().getResource("").getPath() + "pathTestResources2.properties";
         // props03.load(new FileInputStream(pathTestResources2));
 
+<<<<<<< HEAD
         // String pathTestResources2Resources3 = Thread.currentThread().getContextClassLoader().getResource("").getPath() + "pathTestResources2Resources3.properties";
         // props04.load(new FileInputStream(pathTestResources2Resources3));
+=======
+        String pathTestResources2Resources3 = Thread.currentThread().getContextClassLoader().getResource("").getPath() + "pathTestResources2Resources3.properties";
+        props04.load(new FileInputStream(pathTestResources2Resources3));
+        */
+>>>>>>> 5bc2e9da49b4f23dcdf685f7c2ec3a072c4c004d
     }
 
     public String getProperty(String key) {

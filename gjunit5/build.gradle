@@ -1,0 +1,29 @@
+apply plugin: 'java'
+
+group 'com.test.gradle_and_junit5'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+test {
+    useJUnitPlatform()
+}
+
+dependencies {
+    //testCompile("org.junit.jupiter:junit-jupiter-platform:1.2.0")
+    testCompile("org.junit.jupiter:junit-jupiter-api:5.2.0")
+    testCompile("org.junit.jupiter:junit-jupiter-params:5.2.0")
+    testRuntime("org.junit.jupiter:junit-jupiter-engine:5.2.0")
+}
+
+sourceSets {
+    test {
+        java{
+            srcDir 'test/java'
+        }
+    }
+}
