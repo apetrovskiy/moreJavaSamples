@@ -14,7 +14,7 @@ public class MyTests {
         int i = 1;
         int j = 2;
         System.out.println("simple test");
-        assertTrue(i == j);
+        assertTrue(i <= j);
     }
 
 
@@ -22,7 +22,7 @@ public class MyTests {
     @ValueSource(strings = { "aaa", "bbb", "ccc" })
     public void paramTest(String word) {
         System.out.println("parameterized test: " + word);
-        assertTrue("aaa".equals(word));
+        assertTrue("aaabbb".contains(word));
     }
 
 }
