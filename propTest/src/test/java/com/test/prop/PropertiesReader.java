@@ -18,7 +18,7 @@ public class PropertiesReader {
 
         String pathTestResources = rootPath + "pathTestResources.properties";
         props01.load(new FileInputStream(pathTestResources));
-
+/*
         String pathTest = Thread.currentThread().getContextClassLoader().getResource("").getPath() + "pathTopResources.properties";
         props02.load(new FileInputStream(pathTest));
 
@@ -27,6 +27,7 @@ public class PropertiesReader {
 
         String pathTestResources2Resources3 = Thread.currentThread().getContextClassLoader().getResource("").getPath() + "pathTestResources2Resources3.properties";
         props04.load(new FileInputStream(pathTestResources2Resources3));
+        */
     }
 
     public String getProperty(String key) {
