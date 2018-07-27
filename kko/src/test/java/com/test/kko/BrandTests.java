@@ -1,23 +1,25 @@
-package com.test.kkk;
+package com.test.kko;
 
 import com.jayway.restassured.RestAssured;
 
-import java.lang.reflect.Array;
 import java.lang.reflect.Method;
 import java.util.*;
-import java.util.function.Consumer;
-import java.util.stream.*;
 
 import com.jayway.restassured.http.ContentType;
 import com.jayway.restassured.response.Response;
-import org.junit.Before;
-import org.junit.Test;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import static com.jayway.restassured.RestAssured.given;
 
 public class BrandTests {
 
-    @Before
+    @BeforeEach
     public void setUp(){
         RestAssured.baseURI = "http://dlb1.aureacentral.com:10203/api/data/brands";
     }
