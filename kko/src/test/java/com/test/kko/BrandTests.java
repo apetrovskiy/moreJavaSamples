@@ -10,6 +10,7 @@ import com.jayway.restassured.response.Response;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestFactory;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
@@ -67,6 +68,7 @@ public class BrandTests {
     */
 
     @Test
+    @TestFactory
     public void getBrands(){
 
         // https://www.testingexcellence.com/parse-json-response-rest-assured/
@@ -90,5 +92,6 @@ public class BrandTests {
                 System.out.println(testCaseName);
             }
         });
+        assertTrue(true);
     }
 }

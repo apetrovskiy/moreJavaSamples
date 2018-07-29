@@ -5,6 +5,7 @@ group 'com.test.kko'
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
+targetCompatibility = 1.8
 
 repositories {
     mavenCentral()
@@ -21,13 +22,14 @@ dependencies {
     testCompile("com.jayway.restassured:rest-assured:2.9.0")
     testCompile("javax.json:javax.json-api:1.1.2")
     testCompile("org.glassfish:javax.json:1.1")
-    compile 'org.junit.jupiter:junit-jupiter-api'
-    compile 'org.junit.jupiter:junit-jupiter-api'
-    compile 'org.junit.jupiter:junit-jupiter-api'
-    compile 'org.junit.jupiter:junit-jupiter-api'
 }
 
 sourceSets {
+    main {
+        java{
+            srcDir 'test/java'
+        }
+    }
     test {
         java{
             srcDir 'test/java'
