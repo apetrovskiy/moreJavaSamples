@@ -36,7 +36,7 @@
         <jsoup.version>1.13.1</jsoup.version>
         <commons-text.version>1.8</commons-text.version>
         <commons-lang3.version>3.10</commons-lang3.version>
-        <commons-io.version>2.6</commons-io.version>
+        <commons-io.version>2.7</commons-io.version>
         <awaitility.version>4.0.2</awaitility.version>
         <awaitility.version>4.0.2</awaitility.version>
         <hamcrest.version>2.2</hamcrest.version>
