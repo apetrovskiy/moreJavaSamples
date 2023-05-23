@@ -42,7 +42,7 @@
         <hamcrest.version>2.2</hamcrest.version>
         <javafaker.version>1.0.2</javafaker.version>
         <rest-assured.version>4.3.0</rest-assured.version>
-        <jackson.version>2.12.1</jackson.version>
+        <jackson.version>2.12.7.1</jackson.version>
         <mongodb-driver.version>3.12.2</mongodb-driver.version>
         <jooq.version>3.13.1</jooq.version>
         <kafka.version>2.5.0</kafka.version>
