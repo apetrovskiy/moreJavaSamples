@@ -45,7 +45,7 @@
         <jackson.version>2.12.7.1</jackson.version>
         <mongodb-driver.version>3.12.2</mongodb-driver.version>
         <jooq.version>3.13.1</jooq.version>
-        <kafka.version>2.5.0</kafka.version>
+        <kafka.version>2.6.3</kafka.version>
         <allure.version>2.10.0</allure.version>
         <allure.deps.version>2.13.3</allure.deps.version>
         <aspectj.version>1.9.5</aspectj.version>
