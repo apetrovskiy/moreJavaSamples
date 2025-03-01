@@ -29,8 +29,10 @@ class RestApiClient(baseUrl: String) extends Logger {
     } else {
       val response = request.send(backend)
       response.body match {
-        case Right(_) =>
-          logger.info(s"User created successfully: ${user.id}")
+        case Right(user) =>
+          // logger.info(s"User created successfully: ${user.id}")
+          // TODO
+          logger.info(s"User created successfully: ${user}")
           Success(())
         case Left(error) =>
           logger.error(s"Failed to create user: $error. Retrying in $delay...")
