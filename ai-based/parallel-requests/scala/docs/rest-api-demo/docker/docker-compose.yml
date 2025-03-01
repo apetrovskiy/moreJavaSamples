@@ -12,12 +12,9 @@ services:
       - "8081:8080"
     volumes:
       - ./mock-server:/home/wiremock
-  mongodb:
-    image: mongo:6.0
+  h2-database:
+    image: oscarfonts/h2
     ports:
-      - "27017:27017"
-    volumes:
-      - mongodb_data:/data/db
-
-volumes:
-  mongodb_data:
+      - "8082:8082"
+    environment:
+      - H2_OPTIONS=-web -webAllowOthers -webPort 8082
