@@ -244,3 +244,6 @@ gradle-app.setting
 *.hprof
 
 # End of https://www.toptal.com/developers/gitignore/api/scala,java,kotlin,groovy,gradle,sbt,maven,visualstudiocode,jetbrains+all,metals,nodechakratimetraveldebug
+
+**/.scala-build/
+**/.bsp/
