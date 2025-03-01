@@ -1,6 +1,6 @@
 package com.example.util
 
-import com.github.javafaker.Faker
+import net.datafaker.Faker
 import com.example.model.User
 import java.util.UUID
 import com.example.util.Logger
