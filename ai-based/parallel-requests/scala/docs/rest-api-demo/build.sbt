@@ -16,3 +16,6 @@ libraryDependencies += "com.softwaremill.sttp.client3" %% "circe" % "3.10.3"
 libraryDependencies += "io.circe" %% "circe-generic" % "0.14.10"
 libraryDependencies += ("org.mongodb.scala" %% "mongo-scala-driver" % "5.3.1").cross(CrossVersion.for3Use2_13)
 libraryDependencies += "com.typesafe" % "config" % "1.4.3"
+libraryDependencies += "org.scala-lang.modules" %% "scala-parallel-collections" % "1.2.0"
+libraryDependencies += "io.micrometer" % "micrometer-core" % "1.14.4"
+libraryDependencies += "io.micrometer" % "micrometer-registry-prometheus" % "1.14.4"
