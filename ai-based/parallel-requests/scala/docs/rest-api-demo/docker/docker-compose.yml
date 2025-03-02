@@ -1,3 +1,4 @@
+# docker-compose.yml
 version: '3.8'
 services:
   rest-api-demo:
@@ -15,7 +16,7 @@ services:
     ports:
       - "8081:8080"
     volumes:
-      - ./mock-server:/home/wiremock
+      - ../mock-server:/home/wiremock
   mongodb:
     image: mongo:6.0
     ports:
