@@ -2,15 +2,14 @@ package com.example
 
 import com.example.client.ParallelRestApiClient
 import com.example.model.User
-// import com.example.util.{Metrics, ThreadPool, ThreadPoolManager, UserGenerator}
-import com.example.util.{ThreadPool, ThreadPoolManager, UserGenerator}
+import com.example.util.{Metrics, ThreadPool, ThreadPoolManager, UserGenerator}
 import sttp.tapir._
-// import sttp.tapir.server.netty.NettyServerInterpreter
+import sttp.tapir.server.netty.NettyFutureServerInterpreter
 import scala.concurrent.Future
 import scala.concurrent.ExecutionContext
 
 object Main extends App {
-  implicit val ec:ExecutionContext = ThreadPool.executionContext
+  implicit val ec: ExecutionContext = ThreadPool.executionContext
 
   // Start thread pool monitoring
   ThreadPoolManager.monitorAndAdjustThreadPool()
@@ -21,6 +20,12 @@ object Main extends App {
   client.createUsersInParallel(users)
 
   // Expose metrics endpoint
-//   val metricsEndpoint = endpoint.get.in("metrics").out(stringBody).serverLogicSuccess(_ => Future.successful(Metrics.getMetrics))
-//   NettyServerInterpreter().toHandler(List(metricsEndpoint)).start()
+  val metricsEndpoint = endpoint.get
+    .in("metrics")
+    .out(stringBody)
+    .serverLogicSuccess(_ => Future.successful(Metrics.getMetrics))
+    
+  NettyFutureServerInterpreter()
+    .toHandler(List(metricsEndpoint))
+    .start()
 }
