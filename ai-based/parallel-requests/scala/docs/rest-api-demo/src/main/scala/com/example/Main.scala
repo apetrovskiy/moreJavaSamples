@@ -4,7 +4,7 @@ import com.example.client.ParallelRestApiClient
 import com.example.model.User
 import com.example.util.{Metrics, ThreadPool, ThreadPoolManager, UserGenerator}
 import sttp.tapir._
-import sttp.tapir.server.netty.NettyFutureServerInterpreter
+import sttp.tapir.server.netty.{NettyFutureServer, NettyFutureServerInterpreter}
 import scala.concurrent.Future
 import scala.concurrent.ExecutionContext
 
@@ -24,8 +24,10 @@ object Main extends App {
     .in("metrics")
     .out(stringBody)
     .serverLogicSuccess(_ => Future.successful(Metrics.getMetrics))
-    
-  NettyFutureServerInterpreter()
-    .toHandler(List(metricsEndpoint))
+  
+  val routes = NettyFutureServerInterpreter().toRoute(metricsEndpoint)
+  NettyFutureServer()
+    .port(8080)
+    .addRoutes(routes)
     .start()
 }

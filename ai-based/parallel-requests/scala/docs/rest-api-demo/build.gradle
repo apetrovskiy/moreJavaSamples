@@ -9,8 +9,7 @@ repositories {
 
 dependencies {
     implementation 'org.scala-lang:scala3-library_3:3.3.5'
-    implementation 'ch.qos.logback:logback-classic:1.5.17' // Logging
-    testImplementation 'org.scalatest:scalatest_3:3.2.19' // Testing
+    implementation 'ch.qos.logback:logback-classic:1.5.17'
     implementation 'net.datafaker:datafaker:2.4.2'
     testImplementation 'org.wiremock:wiremock:3.12.0'
     testImplementation 'com.h2database:h2:2.3.232'
@@ -19,16 +18,14 @@ dependencies {
     implementation 'com.softwaremill.sttp.client3:circe_3:3.10.3'
     implementation 'io.circe:circe-generic_3:0.14.10'
     implementation 'org.mongodb.scala:mongo-scala-driver_2.13:5.3.1'
-    // .cross(CrossVersion.for3Use2_13)
     implementation 'com.typesafe:config:1.4.3'
     implementation 'org.scala-lang.modules:scala-parallel-collections_3:1.2.0'
     implementation 'io.micrometer:micrometer-core:1.14.4'
     implementation 'io.micrometer:micrometer-registry-prometheus:1.14.4'
-    // https://mvnrepository.com/artifact/com.softwaremill.sttp.tapir/tapir-server
-implementation 'com.softwaremill.sttp.tapir:tapir-server_3:1.11.16'
-// https://mvnrepository.com/artifact/com.softwaremill.sttp.tapir/tapir-netty-server
-implementation 'com.softwaremill.sttp.tapir:tapir-netty-server_3:1.11.16'
-
+    implementation 'com.softwaremill.sttp.tapir:tapir-core_3:1.11.16'
+    implementation 'com.softwaremill.sttp.tapir:tapir-netty-server_3:1.11.16'
+    implementation 'com.softwaremill.sttp.tapir:tapir-prometheus-metrics_3:1.11.16'
+    testImplementation 'org.scalatest:scalatest_3:3.2.19'
 }
 
 application {
