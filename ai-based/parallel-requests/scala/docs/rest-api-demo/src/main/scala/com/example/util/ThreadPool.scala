@@ -4,16 +4,13 @@ import java.util.concurrent.{Executors, ThreadPoolExecutor, TimeUnit}
 import scala.concurrent.ExecutionContext
 
 object ThreadPool {
-  private val minThreads = sys.env.getOrElse("MIN_THREADS", "1").toInt
-  private val maxThreads = sys.env.getOrElse("MAX_THREADS", "10").toInt
+  private val minThreads = sys.env.getOrElse("MIN_THREADS", "10").toInt
+  private val maxThreads = sys.env.getOrElse("MAX_THREADS", "100").toInt
 
   // private 
   // TODO
-  val threadPool = Executors.newCachedThreadPool().asInstanceOf[ThreadPoolExecutor]
-  threadPool.setCorePoolSize(minThreads)
-  threadPool.setMaximumPoolSize(maxThreads)
-
-  implicit val executionContext: ExecutionContext = ExecutionContext.fromExecutorService(threadPool)
+  val threadPool = Executors.newFixedThreadPool(maxThreads)
+  implicit val executionContext: ExecutionContext = ExecutionContext.fromExecutor(threadPool)
 
   def shutdown(): Unit = {
     threadPool.shutdown()

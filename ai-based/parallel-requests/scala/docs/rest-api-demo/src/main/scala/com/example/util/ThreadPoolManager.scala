@@ -13,12 +13,12 @@ object ThreadPoolManager {
         val cpuUsage = SystemMetrics.getCpuUsage
         val memoryUsage = SystemMetrics.getMemoryUsage
 
-        val currentThreads = ThreadPool.threadPool.getPoolSize
+        val currentThreads = 10 // ThreadPool.threadPool. //.getPoolSize
         val newThreads = calculateOptimalThreads(cpuUsage, memoryUsage, currentThreads)
 
         if (newThreads != currentThreads) {
-          ThreadPool.threadPool.setCorePoolSize(newThreads)
-          ThreadPool.threadPool.setMaximumPoolSize(newThreads)
+          // ThreadPool.threadPool.setCorePoolSize(newThreads)
+          // ThreadPool.threadPool.setMaximumPoolSize(newThreads)
         }
 
         Thread.sleep(checkInterval.toMillis)

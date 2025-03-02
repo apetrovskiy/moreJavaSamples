@@ -1,32 +1,31 @@
-// UserStorageTest.scala
 package com.example.storage
 
 import com.example.model.User
 import com.example.util.UserGenerator
+import de.flapdoodle.embed.mongo.config.{MongodConfig, Net}
+import de.flapdoodle.embed.mongo.distribution.Version
+import de.flapdoodle.embed.mongo.{MongodProcess, MongodStarter}
+import de.flapdoodle.embed.process.runtime.Network
 import org.scalatest.BeforeAndAfterAll
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.matchers.should.Matchers
-import de.flapdoodle.embed.mongo.{MongodStarter, MongodExecutable}
-import de.flapdoodle.embed.mongo.config.{MongodConfig, Net}
-import de.flapdoodle.embed.process.runtime.Network
 
 class UserStorageTest extends AnyFlatSpec with Matchers with BeforeAndAfterAll {
-  private var mongodExecutable: MongodExecutable = _
+  private var mongodProcess: MongodProcess = _
   private val mongoUri = "mongodb://localhost:27017"
 
   override def beforeAll(): Unit = {
-    val starter = MongodStarter.getDefaultInstance()
+    val starter = MongodStarter.getDefaultInstance
     val mongodConfig = MongodConfig.builder()
-      .version(de.flapdoodle.embed.mongo.distribution.Version.Main.V4_4)
+      .version(Version.Main.V7_0)
       .net(new Net("localhost", 27017, Network.localhostIsIPv6()))
       .build()
-      
-    mongodExecutable = starter.prepare(mongodConfig)
-    mongodExecutable.start()
+
+    mongodProcess = starter.prepare(mongodConfig).start()
   }
 
   override def afterAll(): Unit = {
-    mongodExecutable.stop()
+    mongodProcess.stop()
   }
 
   "UserStorage" should "save and retrieve a user" in {

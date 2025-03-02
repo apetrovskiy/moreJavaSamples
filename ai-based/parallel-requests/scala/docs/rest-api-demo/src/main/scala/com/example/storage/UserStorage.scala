@@ -19,6 +19,8 @@ class UserStorage(mongoUri: String) {
     val future = collection.find(equal("id", id)).first().toFuture()
     Await.result(future, 10.seconds) match {
       case user: User => Some(user)
+      // case userDoc: Document => Some(userDoc)
+      // case _ => None
       case null => None
     }
   }
