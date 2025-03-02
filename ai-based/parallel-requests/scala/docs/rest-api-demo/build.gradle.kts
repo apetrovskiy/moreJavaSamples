@@ -20,11 +20,11 @@ dependencies {
     implementation("org.mongodb.scala:mongo-scala-driver_2.13:5.3.1")
     implementation("com.typesafe:config:1.4.3")
     implementation("org.scala-lang.modules:scala-parallel-collections_3:1.2.0")
-    implementation("io.micrometer:micrometer-core:1.14.4")
-    implementation("io.micrometer:micrometer-registry-prometheus:1.14.4")
+    // implementation("io.micrometer:micrometer-core:1.14.4")
+    // implementation("io.micrometer:micrometer-registry-prometheus:1.14.4")
     implementation("com.softwaremill.sttp.tapir:tapir-core_3:1.11.16")
     implementation("com.softwaremill.sttp.tapir:tapir-netty-server_3:1.11.16")
-    implementation("com.softwaremill.sttp.tapir:tapir-prometheus-metrics_3:1.11.16")
+    // implementation("com.softwaremill.sttp.tapir:tapir-prometheus-metrics_3:1.11.16")
     testImplementation("org.scalatest:scalatest_3:3.2.19")
 }
 
