@@ -1,6 +1,7 @@
 plugins {
     scala
     application
+    id("com.github.johnrengelman.shadow") version("8.1.1")
 }
 
 repositories {
@@ -26,8 +27,15 @@ dependencies {
     implementation("com.softwaremill.sttp.tapir:tapir-netty-server_3:1.11.16")
     // implementation("com.softwaremill.sttp.tapir:tapir-prometheus-metrics_3:1.11.16")
     testImplementation("org.scalatest:scalatest_3:3.2.19")
+    testImplementation("de.flapdoodle.embed:de.flapdoodle.embed.mongo:4.18.1")
 }
 
 application {
     mainClass.set("com.example.Main")
+}
+
+shadowJar {
+    archiveBaseName.set("rest-api-demo")
+    archiveVersion.set("0.1.0")
+    mergeServiceFiles()
 }
