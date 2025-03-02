@@ -18,41 +18,27 @@ libraryDependencies += ("org.mongodb.scala" %% "mongo-scala-driver" % "5.3.1").c
 libraryDependencies += "com.typesafe" % "config" % "1.4.3"
 libraryDependencies += "org.scala-lang.modules" %% "scala-parallel-collections" % "1.2.0"
 
-libraryDependencies += "io.micrometer" % "micrometer-core" % "1.10.5"
-libraryDependencies += "io.micrometer" % "micrometer-registry-prometheus" % "1.10.5"
+// libraryDependencies += "io.micrometer" % "micrometer-core" % "1.10.5"
+// libraryDependencies += "io.micrometer" % "micrometer-registry-prometheus" % "1.10.5"
 
 //
 // libraryDependencies += "io.micrometer" % "micrometer-registry-prometheus-simpleclient" % "1.10.5"
-// https://mvnrepository.com/artifact/io.micrometer/micrometer-java21
 // libraryDependencies += "io.micrometer" % "micrometer-java21" % "1.10.5"
 //
 
-// libraryDependencies += "io.micrometer" % "micrometer-core" % "1.14.4"
-// libraryDependencies += "io.micrometer" % "micrometer-registry-prometheus" % "1.14.4"
+libraryDependencies += "io.micrometer" % "micrometer-core" % "1.14.4"
+libraryDependencies += "io.micrometer" % "micrometer-registry-prometheus" % "1.14.4"
 
-// // https://mvnrepository.com/artifact/io.micrometer/micrometer-registry-prometheus-simpleclient
 // libraryDependencies += "io.micrometer" % "micrometer-registry-prometheus-simpleclient" % "1.14.4"
-// // https://mvnrepository.com/artifact/io.micrometer/micrometer-java21
 // libraryDependencies += "io.micrometer" % "micrometer-java21" % "1.14.4"
 
-
-
-// https://mvnrepository.com/artifact/com.softwaremill.sttp.tapir/tapir-server
 libraryDependencies += "com.softwaremill.sttp.tapir" %% "tapir-server" % "1.11.16"
-// https://mvnrepository.com/artifact/com.softwaremill.sttp.tapir/tapir-netty-server
 libraryDependencies += "com.softwaremill.sttp.tapir" %% "tapir-netty-server" % "1.11.16"
 
-// https://mvnrepository.com/artifact/com.softwaremill.sttp.tapir/tapir-sttp-client
 libraryDependencies += "com.softwaremill.sttp.tapir" %% "tapir-sttp-client" % "1.11.16"
-// https://mvnrepository.com/artifact/com.softwaremill.sttp.tapir/tapir-netty-server
 libraryDependencies += "com.softwaremill.sttp.tapir" %% "tapir-netty-server" % "1.11.16"
-// https://mvnrepository.com/artifact/com.softwaremill.sttp.tapir/tapir-sttp-stub-server
 libraryDependencies += "com.softwaremill.sttp.tapir" %% "tapir-sttp-stub-server" % "1.11.16"
-// https://mvnrepository.com/artifact/com.softwaremill.sttp.tapir/tapir-client
 libraryDependencies += "com.softwaremill.sttp.tapir" %% "tapir-client" % "1.11.16"
-// https://mvnrepository.com/artifact/com.softwaremill.sttp.tapir/tapir-prometheus-metrics
 libraryDependencies += "com.softwaremill.sttp.tapir" %% "tapir-prometheus-metrics" % "1.11.16"
-// https://mvnrepository.com/artifact/com.softwaremill.sttp.tapir/tapir-netty-server-sync
 libraryDependencies += "com.softwaremill.sttp.tapir" %% "tapir-netty-server-sync" % "1.11.16"
-// https://mvnrepository.com/artifact/com.softwaremill.sttp.tapir/sttp-mock-server
 libraryDependencies += "com.softwaremill.sttp.tapir" %% "sttp-mock-server" % "1.11.16"
