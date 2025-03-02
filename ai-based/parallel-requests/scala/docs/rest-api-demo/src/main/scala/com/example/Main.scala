@@ -20,14 +20,14 @@ object Main extends App {
   client.createUsersInParallel(users)
 
   // Expose metrics endpoint
-  val metricsEndpoint = endpoint.get
-    .in("metrics")
-    .out(stringBody)
-    .serverLogicSuccess(_ => Future.successful(Metrics.getMetrics))
+  // val metricsEndpoint = endpoint.get
+  //   .in("metrics")
+  //   .out(stringBody)
+  //   .serverLogicSuccess(_ => Future.successful(Metrics.getMetrics))
   
   val routes = NettyFutureServerInterpreter().toRoute(metricsEndpoint)
-  NettyFutureServer()
+    NettyFutureServer()
     .port(8080)
-    .addRoutes(routes)
+    // .addRoutes(List(routes)) // Wrap in List
     .start()
 }
