@@ -17,5 +17,6 @@ libraryDependencies ++= Seq(
   "org.scala-lang.modules" %% "scala-parallel-collections" % "1.2.0",
   "com.softwaremill.sttp.tapir" %% "tapir-core" % "1.11.16",
   "com.softwaremill.sttp.tapir" %% "tapir-netty-server" % "1.11.16",
-  "de.flapdoodle.embed" % "de.flapdoodle.embed.mongo" % "4.18.1" % Test
+  "de.flapdoodle.embed" % "de.flapdoodle.embed.mongo" % "4.18.1" % Test,
+  "org.slf4j" % "slf4j-simple" % "2.0.17" % Test // this to avoid SLF4J warnings
 )

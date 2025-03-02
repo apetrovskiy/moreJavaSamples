@@ -28,6 +28,8 @@ dependencies {
     // implementation("com.softwaremill.sttp.tapir:tapir-prometheus-metrics_3:1.11.16")
     testImplementation("org.scalatest:scalatest_3:3.2.19")
     testImplementation("de.flapdoodle.embed:de.flapdoodle.embed.mongo:4.18.1")
+    testImplementation("de.flapdoodle.embed:de.flapdoodle.embed.mongo:4.18.1")
+    testImplementation("org.slf4j:slf4j-simple:2.0.17") // this to avoid SLF4J warnings
 }
 
 application {
