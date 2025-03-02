@@ -4,6 +4,7 @@ import com.example.model.User
 import com.example.util.{Logger, ThreadPool}
 import scala.concurrent.Future
 import scala.util.{Failure, Success}
+import com.example.util.ThreadPool.executionContext
 
 class ParallelRestApiClient(baseUrl: String) extends Logger {
   private val restApiClient = new RestApiClient(baseUrl)

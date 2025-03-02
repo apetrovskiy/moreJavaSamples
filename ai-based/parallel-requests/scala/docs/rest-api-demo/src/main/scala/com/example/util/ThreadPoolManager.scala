@@ -2,6 +2,7 @@ package com.example.util
 
 import scala.concurrent.duration._
 import scala.concurrent.{Await, Future}
+import com.example.util.ThreadPool.executionContext
 
 object ThreadPoolManager {
   private val checkInterval = 5.seconds

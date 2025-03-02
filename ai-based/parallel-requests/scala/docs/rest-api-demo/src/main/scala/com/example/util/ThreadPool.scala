@@ -7,7 +7,9 @@ object ThreadPool {
   private val minThreads = sys.env.getOrElse("MIN_THREADS", "1").toInt
   private val maxThreads = sys.env.getOrElse("MAX_THREADS", "10").toInt
 
-  private val threadPool = Executors.newCachedThreadPool().asInstanceOf[ThreadPoolExecutor]
+  // private 
+  // TODO
+  val threadPool = Executors.newCachedThreadPool().asInstanceOf[ThreadPoolExecutor]
   threadPool.setCorePoolSize(minThreads)
   threadPool.setMaximumPoolSize(maxThreads)
 
