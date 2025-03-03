@@ -1,0 +1,19 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    ports:
+      - "8080:8080"
+    environment:
+      - DB_TYPE=sqlite
+      - DB_URL=/data/users.db
+    volumes:
+      - ./data:/data
+  mockserver:
+    image: mockserver/mockserver
+    ports:
+      - "1080:1080"
+    environment:
+      - MOCKSERVER_INITIALIZATION_JSON_PATH=/config/expectations.json
+    volumes:
+      - ./mockserver:/config

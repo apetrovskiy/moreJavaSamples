@@ -1,0 +1,24 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+    - name: Install Docker
+      apt:
+        name: docker.io
+        state: present
+
+    - name: Start Docker service
+      service:
+        name: docker
+        state: started
+        enabled: yes
+
+    - name: Clone repository
+      git:
+        repo: https://github.com/your/repo.git
+        dest: /opt/scala-rest-api
+
+    - name: Build and start containers
+      command: docker-compose up -d
+      args:
+        chdir: /opt/scala-rest-api/docker
