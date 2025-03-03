@@ -1,0 +1,18 @@
+# SBT
+target/
+project/target/
+project/project/
+dist/
+*.class
+*.log
+
+# Logs
+logs/
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Docker
+docker-compose.override.yml
