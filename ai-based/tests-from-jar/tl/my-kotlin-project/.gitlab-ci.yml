@@ -5,6 +5,10 @@ stages:
   - jar
   - test
 
+.cache_paths: &cache_paths
+  paths:
+    - build/gradle
+
 .common_rules: &common_rules
   - if: '$CI_PIPELINE_SOURCE == "web"'
   - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
@@ -15,6 +19,9 @@ build:
   stage: build
   script:
     - ./gradlew clean build
+  cache:
+    key: "gradle-cache-$CI_COMMIT_REF_SLUG"
+    paths: *cache_paths
   rules:
     *common_rules
 
@@ -22,6 +29,14 @@ jar:
   stage: jar
   script:
     - ./gradlew jar
+  cache:
+    key: "gradle-cache-$CI_COMMIT_REF_SLUG"
+    paths: *cache_paths
+    policy: pull
+  artifacts:
+    paths:
+      - build/libs/my-kotlin-project-1.0-SNAPSHOT.jar
+    expire_in: 1 day
   rules:
     *common_rules
 
@@ -31,5 +46,7 @@ test:
     - ./gradlew downloadJUnitConsole
     - java -jar build/libs/junit-platform-console-standalone-1.9.0.jar --classpath build/libs/my-kotlin-project-1.0-SNAPSHOT.jar --select-package com.example
   allow_failure: true
+  dependencies:
+    - jar
   rules:
     *common_rules
