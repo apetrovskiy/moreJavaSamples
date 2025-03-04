@@ -1,0 +1,35 @@
+image: openjdk:17
+
+stages:
+  - build
+  - jar
+  - test
+
+.common_rules: &common_rules
+  - if: '$CI_PIPELINE_SOURCE == "web"'
+  - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+  - if: '$CI_PIPELINE_SOURCE == "push" && $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
+  - when: never
+
+build:
+  stage: build
+  script:
+    - ./gradlew clean build
+  rules:
+    *common_rules
+
+jar:
+  stage: jar
+  script:
+    - ./gradlew jar
+  rules:
+    *common_rules
+
+test:
+  stage: test
+  script:
+    - ./gradlew downloadJUnitConsole
+    - java -jar build/libs/junit-platform-console-standalone-1.9.0.jar --classpath build/libs/my-kotlin-project-1.0-SNAPSHOT.jar --select-package com.example
+  allow_failure: true
+  rules:
+    *common_rules
