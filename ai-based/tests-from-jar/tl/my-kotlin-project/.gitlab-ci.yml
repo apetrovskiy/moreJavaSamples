@@ -6,8 +6,7 @@ stages:
   - test
 
 .cache_paths: &cache_paths
-  paths:
-    - build/gradle
+  - build/gradle
 
 .common_rules: &common_rules
   - if: '$CI_PIPELINE_SOURCE == "web"'
