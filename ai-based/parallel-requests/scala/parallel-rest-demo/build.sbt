@@ -15,6 +15,8 @@ lazy val root = (project in file("."))
   .configs(IntegrationTest)
   .settings(
     name := "parallel-rest-demo",
+    Test / fork := true,
+    IntegrationTest / fork := true,
     
     // Main settings
     libraryDependencies ++= Seq(
@@ -34,6 +36,9 @@ lazy val root = (project in file("."))
 
       // HTTP client
       "com.softwaremill.sttp.client3" %% "core" % "3.9.5"
+
+      // In build.sbt, add to libraryDependencies:
+      "com.comcast" %% "ip4s-core" % "3.4.0"
     ),
     
     // Integration test configuration
@@ -50,3 +55,23 @@ lazy val root = (project in file("."))
     // Aliases
     addCommandAlias("benchmark", "Jmh/run -i 3 -wi 3 -f1 -t1")
   )
+
+val Http4sVersion = "0.23.26"
+val CirceVersion = "0.14.6"
+
+libraryDependencies ++= Seq(
+  "org.http4s" %% "http4s-ember-server" % Http4sVersion,
+  "org.http4s" %% "http4s-dsl"          % Http4sVersion,
+  "org.http4s" %% "http4s-circe"        % Http4sVersion,
+  "io.circe"   %% "circe-generic"       % CirceVersion
+)
+
+val DoobieVersion = "1.0.0-RC4"
+val FlywayVersion = "10.7.1"
+
+libraryDependencies ++= Seq(
+  "org.flywaydb"   % "flyway-core"  % FlywayVersion,
+  "org.tpolecat"  %% "doobie-core"  % DoobieVersion,
+  "org.tpolecat"  %% "doobie-hikari"% DoobieVersion,
+  "org.postgresql" % "postgresql"   % "42.7.3"
+)
