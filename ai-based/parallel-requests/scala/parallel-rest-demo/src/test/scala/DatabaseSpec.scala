@@ -1,16 +1,26 @@
-import com.dimafeng.testcontainers.ScalaTestContainer
 import com.dimafeng.testcontainers.PostgreSQLContainer
 import org.scalatest.flatspec.AnyFlatSpec
+import org.scalatest.BeforeAndAfterAll
 import java.sql.DriverManager
 
-class DatabaseSpec extends AnyFlatSpec with ScalaTestContainer {
-  override val containerDef = PostgreSQLContainer.Def()
+class DatabaseSpec extends AnyFlatSpec with BeforeAndAfterAll {
+  private val container = PostgreSQLContainer()
+  
+  override def beforeAll(): Unit = {
+    super.beforeAll()
+    container.start()
+  }
 
-  "PostgreSQL container" should "be available" in withContainers { postgres =>
+  override def afterAll(): Unit = {
+    container.stop()
+    super.afterAll()
+  }
+
+  "PostgreSQL container" should "be available" in {
     val conn = DriverManager.getConnection(
-      postgres.jdbcUrl,
-      postgres.username,
-      postgres.password
+      container.jdbcUrl,
+      container.username,
+      container.password
     )
     
     val stmt = conn.createStatement()

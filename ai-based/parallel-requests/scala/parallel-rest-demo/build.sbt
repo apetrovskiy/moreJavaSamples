@@ -1,27 +1,52 @@
 ThisBuild / scalaVersion := "3.3.5"
 ThisBuild / version := "0.1.0"
-ThisBuild / semanticdbEnabled := true
-ThisBuild / semanticdbVersion := scalafixSemanticdb.revision
+ThisBuild / organization := "com.example"
+
+// Dependency version management
+ThisBuild / libraryDependencySchemes ++= Seq(
+  "org.scala-lang.modules" %% "scala-xml" % VersionScheme.Always,
+  "com.dimafeng" %% "testcontainers-scala-core" % VersionScheme.Always
+)
+
+lazy val IntegrationTest = config("it") extend Test
 
 lazy val root = (project in file("."))
-  .enablePlugins(GatlingPlugin)
-  .settings(
-    name := "parallel-rest-demo",
-    libraryDependencies ++= Seq(
-      "ch.qos.logback" % "logback-classic" % "1.4.14",
-      "org.scalatest" %% "scalatest" % "3.2.17" % Test,
-      "com.github.tomakehurst" % "wiremock" % "3.0.1" % Test,
-      "org.testcontainers" % "testcontainers" % "1.19.3" % Test,
-      "com.dimafeng" %% "testcontainers-scala-scalatest" % "0.41.0" % Test,
-      "com.dimafeng" %% "testcontainers-scala-postgresql" % "0.41.0" % Test,
-      "org.postgresql" % "postgresql" % "42.7.3" % Test,
-      "io.gatling" % "gatling-core" % "3.10.3" % Test,
-      "io.gatling.highcharts" % "gatling-charts-highcharts" % "3.10.3" % Test,
-      "io.gatling" % "gatling-test-framework" % "3.10.3" % "test" exclude("com.softwaremill.quicklens" % "quicklens")
-    )
-  )
+  .enablePlugins(JmhPlugin)
   .configs(IntegrationTest)
   .settings(
+    name := "parallel-rest-demo",
+    
+    // Main settings
+    libraryDependencies ++= Seq(
+      // Logging
+      "ch.qos.logback" % "logback-classic" % "1.4.14",
+      
+      // Testcontainers with Scala 3 compatibility
+      "com.dimafeng" %% "testcontainers-scala-core" % "0.41.8" % Test cross CrossVersion.for3Use2_13,
+      "com.dimafeng" %% "testcontainers-scala-postgresql" % "0.41.8" % Test cross CrossVersion.for3Use2_13,
+      "com.dimafeng" %% "testcontainers-scala-scalatest" % "0.41.8" % Test cross CrossVersion.for3Use2_13,
+      
+      // Testing
+      "org.scalatest" %% "scalatest" % "3.2.19" % Test,
+      "com.github.tomakehurst" % "wiremock" % "3.0.1" % Test,
+      "org.testcontainers" % "testcontainers" % "1.19.3" % Test,
+      "org.postgresql" % "postgresql" % "42.7.3" % Test,
+
+      // HTTP client
+      "com.softwaremill.sttp.client3" %% "core" % "3.9.5"
+    ),
+    
+    // Integration test configuration
     Defaults.itSettings,
-    IntegrationTest / fork := true
+    IntegrationTest / testOptions += Tests.Argument("-l", "org.scalatest.tags.Slow"),
+    IntegrationTest / parallelExecution := false,
+    
+    // JMH configuration
+    Jmh / sourceDirectory := (Compile / sourceDirectory).value,
+    Jmh / classDirectory := (Compile / classDirectory).value,
+    Jmh / dependencyClasspath := (Compile / dependencyClasspath).value,
+    Jmh / compile := (Jmh / compile).dependsOn(Compile / compile).value,
+    
+    // Aliases
+    addCommandAlias("benchmark", "Jmh/run -i 3 -wi 3 -f1 -t1")
   )

@@ -1,1 +1,1 @@
-addSbtPlugin("io.gatling" % "gatling-sbt" % "3.10.3")
+addSbtPlugin("pl.project13.scala" % "sbt-jmh" % "0.4.7")
