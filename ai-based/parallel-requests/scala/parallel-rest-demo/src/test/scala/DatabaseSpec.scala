@@ -2,6 +2,10 @@ import com.dimafeng.testcontainers.PostgreSQLContainer
 import org.scalatest.flatspec.AnyFlatSpec
 import org.scalatest.BeforeAndAfterAll
 import java.sql.DriverManager
+import cats.effect.IO
+import cats.effect.unsafe.implicits.global
+import doobie.implicits._
+import org.scalatest.matchers.should.Matchers
 
 class DatabaseSpec extends AnyFlatSpec with BeforeAndAfterAll {
   private val container = PostgreSQLContainer()
