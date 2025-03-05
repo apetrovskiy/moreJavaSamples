@@ -3,10 +3,9 @@ package api
 import cats.effect.IO
 import org.http4s.HttpRoutes
 import org.http4s.dsl.io._
+import org.http4s.circe.CirceEntityEncoder._
 import doobie.util.transactor.Transactor
 import service.ParallelService
-import org.http4s.circe.CirceEntityDecoder._
-import io.circe.generic.auto._
 
 class UserApi(xa: Transactor[IO]) {
   private val service = new ParallelService(xa)
@@ -20,6 +19,7 @@ class UserApi(xa: Transactor[IO]) {
         }
 
     case req @ POST -> Root / "batch-requests" =>
+      import org.http4s.circe.CirceEntityDecoder._
       req.as[List[Int]].flatMap { ids =>
         service.parallelQueries(ids)
           .flatMap(Ok(_))

@@ -1,3 +1,4 @@
+import cats.effect.{IO, Resource}
 import com.comcast.ip4s._
 import org.http4s.ember.server.EmberServerBuilder
 import org.http4s.server.Server
