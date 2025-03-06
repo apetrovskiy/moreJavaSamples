@@ -1,5 +1,4 @@
 import sttp.client3._
-import scala.concurrent.ExecutionContext.Implicits.global
 
 object RestApiClient {
   val backend = HttpClientSyncBackend()
