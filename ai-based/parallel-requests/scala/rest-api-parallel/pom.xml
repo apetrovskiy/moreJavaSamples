@@ -1,0 +1,28 @@
+<dependencies>
+    <dependency>
+        <groupId>com.softwaremill.sttp.client3</groupId>
+        <artifactId>core_3</artifactId>
+        <version>3.8.11</version>
+    </dependency>
+    <dependency>
+        <groupId>com.softwaremill.sttp.client3</groupId>
+        <artifactId>httpclient-backend_3</artifactId>
+        <version>3.8.11</version>
+    </dependency>
+    <dependency>
+        <groupId>com.typesafe.scala-logging</groupId>
+        <artifactId>scala-logging_3</artifactId>
+        <version>3.9.5</version>
+    </dependency>
+    <dependency>
+        <groupId>ch.qos.logback</groupId>
+        <artifactId>logback-classic</artifactId>
+        <version>1.4.7</version>
+    </dependency>
+    <dependency>
+        <groupId>org.scalamock</groupId>
+        <artifactId>scalamock_3</artifactId>
+        <version>5.2.0</version>
+        <scope>test</scope>
+    </dependency>
+</dependencies>

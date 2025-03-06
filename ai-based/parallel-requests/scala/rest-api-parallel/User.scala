@@ -1,0 +1,1 @@
+case class User(id: String, firstName: String, lastName: String, age: Int, position: String)
